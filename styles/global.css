@@ -20,7 +20,7 @@
     --text-color-secondary: #A1A1AA;
     --text-color-primary: #F4F4F5;
 
-    --brand-gradient: linear-gradient(90deg, rgba(252,74,26,1) 0%, rgba(247,183,51,1) 50%);
+    --brand-gradient: linear-gradient(90deg, rgba(252,74,26,1) 0%, rgba(247,183,51,1) 100%);
     --brand-color-primary: #F7B733;
     --brand-color-secondary: #FC4A1A;
 
@@ -34,6 +34,12 @@
     --fs-lg: 1.25rem;
     --fs-xl: 1.5rem;
     --fs-2xl: 2.5rem;
+
+    --px-lg: 1.5rem;
+    
+    --py-base: 1rem;
+    --py-lg: 1.5rem;
+    --py-xl: 3rem;
 }
 
 html {
@@ -66,6 +72,12 @@ a {
     text-decoration: none;
     color: inherit;
 }
+a:hover {
+    background: var(--brand-gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
 ul[role="list"] {
     list-style: none;
 }
@@ -75,5 +87,13 @@ ul[role="list"] {
         --fs-lg: 2rem;
         --fs-xl: 3rem;
         --fs-2xl: 4rem;
+
+        --px-lg: 2rem;
+
+        --py-base: 1.5rem;
+        --py-lg: 2.5rem;
+        --py-xl: 5rem;
+
     }
+    
 }
